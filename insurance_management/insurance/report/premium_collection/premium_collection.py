@@ -38,7 +38,7 @@ def get_data(filters):
         SELECT
             pp.name,
             pp.policy_number,
-            pp.customer_name,
+            c.customer_name,
             pp.payment_date,
             pp.payment_mode,
             pp.payment_amount,
@@ -49,6 +49,7 @@ def get_data(filters):
             pp.receipt_number,
             pp.transaction_id
         FROM `tabPremium Payment` pp
+        LEFT JOIN `tabCustomer` c ON pp.customer = c.name
         WHERE pp.docstatus = 1 {conditions}
         ORDER BY pp.payment_date DESC
         """.format(conditions=conditions),
