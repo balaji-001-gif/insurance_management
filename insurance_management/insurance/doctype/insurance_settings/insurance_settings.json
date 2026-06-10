@@ -1,0 +1,138 @@
+{
+ "doctype": "DocType",
+ "name": "Insurance Settings",
+ "module": "Insurance",
+ "issingle": 1,
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "default_currency",
+   "fieldtype": "Link",
+   "label": "Default Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "section_break_ai",
+   "fieldtype": "Section Break",
+   "label": "AI Configuration"
+  },
+  {
+   "fieldname": "enable_ai_features",
+   "fieldtype": "Check",
+   "label": "Enable AI Features",
+   "default": "1"
+  },
+  {
+   "fieldname": "openai_api_key",
+   "fieldtype": "Password",
+   "label": "OpenAI API Key"
+  },
+  {
+   "fieldname": "google_cloud_api_key",
+   "fieldtype": "Password",
+   "label": "Google Cloud API Key"
+  },
+  {
+   "fieldname": "section_break_rates",
+   "fieldtype": "Section Break",
+   "label": "Base Premium Rates"
+  },
+  {
+   "fieldname": "life_insurance_base_rate",
+   "fieldtype": "Percent",
+   "label": "Life Insurance Base Rate",
+   "default": "0.5"
+  },
+  {
+   "fieldname": "health_insurance_base_rate",
+   "fieldtype": "Percent",
+   "label": "Health Insurance Base Rate",
+   "default": "3"
+  },
+  {
+   "fieldname": "motor_insurance_base_rate",
+   "fieldtype": "Percent",
+   "label": "Motor Insurance Base Rate",
+   "default": "4"
+  },
+  {
+   "fieldname": "property_insurance_base_rate",
+   "fieldtype": "Percent",
+   "label": "Property Insurance Base Rate",
+   "default": "0.2"
+  },
+  {
+   "fieldname": "section_break_tax",
+   "fieldtype": "Section Break",
+   "label": "Tax & Other Settings"
+  },
+  {
+   "fieldname": "gst_rate",
+   "fieldtype": "Percent",
+   "label": "GST Rate",
+   "default": "18"
+  },
+  {
+   "fieldname": "default_grace_period",
+   "fieldtype": "Int",
+   "label": "Default Grace Period (Days)",
+   "default": "30"
+  },
+  {
+   "fieldname": "enable_auto_approval",
+   "fieldtype": "Check",
+   "label": "Enable Auto Approval for Claims"
+  },
+  {
+   "fieldname": "auto_approval_threshold",
+   "fieldtype": "Currency",
+   "label": "Auto Approval Threshold Amount"
+  },
+  {
+   "fieldname": "section_break_payment",
+   "fieldtype": "Section Break",
+   "label": "Payment Integration"
+  },
+  {
+   "fieldname": "razorpay_key_id",
+   "fieldtype": "Data",
+   "label": "Razorpay Key ID"
+  },
+  {
+   "fieldname": "razorpay_key_secret",
+   "fieldtype": "Password",
+   "label": "Razorpay Key Secret"
+  },
+  {
+   "fieldname": "stripe_publishable_key",
+   "fieldtype": "Data",
+   "label": "Stripe Publishable Key"
+  },
+  {
+   "fieldname": "stripe_secret_key",
+   "fieldtype": "Password",
+   "label": "Stripe Secret Key"
+  }
+ ],
+ "permissions": [
+  {
+   "role": "Insurance Manager",
+   "read": 1,
+   "write": 1,
+   "create": 0,
+   "delete": 0
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 0,
+   "delete": 0
+  }
+ ]
+}

@@ -1,0 +1,252 @@
+{
+ "actions": [],
+ "app": "insurance_management",
+ "category": "Modules",
+ "charts": [],
+ "color": "#FF6B35",
+ "creation": "2024-01-01 00:00:00.000000",
+ "custom_base": 0,
+ "doctype": "Workspace",
+ "docstatus": 0,
+ "extends": "",
+ "extends_shorthand": "",
+ "favicon": "icon-shield",
+ "fields": [],
+ "hide_custom": 0,
+ "icon": "icon-shield",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Insurance",
+ "links": [
+  {
+   "type": "DocType",
+   "name": "Insurance Policy",
+   "label": "Insurance Policy",
+   "onboard": 1,
+   "dependencies": "",
+   "quick_list": 0,
+   "count": 0,
+   "link": "List/Insurance Policy"
+  },
+  {
+   "type": "DocType",
+   "name": "Insurance Claim",
+   "label": "Insurance Claim",
+   "onboard": 1,
+   "dependencies": "",
+   "quick_list": 0,
+   "count": 0,
+   "link": "List/Insurance Claim"
+  },
+  {
+   "type": "DocType",
+   "name": "Insurance Quote",
+   "label": "Insurance Quote",
+   "onboard": 1,
+   "dependencies": "",
+   "quick_list": 0,
+   "count": 0,
+   "link": "List/Insurance Quote"
+  },
+  {
+   "type": "DocType",
+   "name": "Insurance Product",
+   "label": "Insurance Product",
+   "onboard": 1,
+   "dependencies": "",
+   "quick_list": 0,
+   "count": 0,
+   "link": "List/Insurance Product"
+  },
+  {
+   "type": "DocType",
+   "name": "Insurance Provider",
+   "label": "Insurance Provider",
+   "onboard": 1,
+   "dependencies": "",
+   "quick_list": 0,
+   "count": 0,
+   "link": "List/Insurance Provider"
+  },
+  {
+   "type": "DocType",
+   "name": "Agent",
+   "label": "Agent",
+   "onboard": 1,
+   "dependencies": "",
+   "quick_list": 0,
+   "count": 0,
+   "link": "List/Agent"
+  },
+  {
+   "type": "DocType",
+   "name": "Premium Payment",
+   "label": "Premium Payment",
+   "onboard": 1,
+   "dependencies": "",
+   "quick_list": 0,
+   "count": 0,
+   "link": "List/Premium Payment"
+  },
+  {
+   "type": "DocType",
+   "name": "Policy Renewal",
+   "label": "Policy Renewal",
+   "onboard": 1,
+   "dependencies": "",
+   "quick_list": 0,
+   "count": 0,
+   "link": "List/Policy Renewal"
+  },
+  {
+   "type": "DocType",
+   "name": "Endorsement",
+   "label": "Endorsement",
+   "onboard": 1,
+   "dependencies": "",
+   "quick_list": 0,
+   "count": 0,
+   "link": "List/Endorsement"
+  },
+  {
+   "type": "DocType",
+   "name": "KYC Document",
+   "label": "KYC Document",
+   "onboard": 1,
+   "dependencies": "",
+   "quick_list": 0,
+   "count": 0,
+   "link": "List/KYC Document"
+  },
+  {
+   "type": "DocType",
+   "name": "Insurance Settings",
+   "label": "Insurance Settings",
+   "onboard": 0,
+   "dependencies": "",
+   "quick_list": 0,
+   "count": 0,
+   "link": "Form/Insurance Settings"
+  },
+  {
+   "type": "DocType",
+   "name": "Policy Type",
+   "label": "Policy Type",
+   "onboard": 1,
+   "dependencies": "",
+   "quick_list": 0,
+   "count": 0,
+   "link": "List/Policy Type"
+  },
+  {
+   "type": "DocType",
+   "name": "Coverage Type",
+   "label": "Coverage Type",
+   "onboard": 1,
+   "dependencies": "",
+   "quick_list": 0,
+   "count": 0,
+   "link": "List/Coverage Type"
+  },
+  {
+   "type": "DocType",
+   "name": "Commission Structure",
+   "label": "Commission Structure",
+   "onboard": 1,
+   "dependencies": "",
+   "quick_list": 0,
+   "count": 0,
+   "link": "List/Commission Structure"
+  },
+  {
+   "type": "DocType",
+   "name": "Risk Factor",
+   "label": "Risk Factor",
+   "onboard": 1,
+   "dependencies": "",
+   "quick_list": 0,
+   "count": 0,
+   "link": "List/Risk Factor"
+  }
+ ],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Insurance",
+ "name": "Insurance",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "permissions": [
+  {
+   "role": "Insurance Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "Insurance Agent",
+   "read": 1,
+   "write": 0,
+   "create": 0,
+   "delete": 0
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  }
+ ],
+ "quick_lists": [],
+ "restrict_to_role": "",
+ "roles": [
+  {
+   "role": "Insurance Manager"
+  },
+  {
+   "role": "System Manager"
+  }
+ ],
+ "sequence_id": 1,
+ "shortcuts": [
+  {
+   "type": "DocType",
+   "name": "Insurance Policy",
+   "label": "Insurance Policy",
+   "onboard": 1,
+   "dependencies": ""
+  },
+  {
+   "type": "DocType",
+   "name": "Insurance Claim",
+   "label": "Insurance Claim",
+   "onboard": 1,
+   "dependencies": ""
+  },
+  {
+   "type": "DocType",
+   "name": "Insurance Quote",
+   "label": "Insurance Quote",
+   "onboard": 1,
+   "dependencies": ""
+  },
+  {
+   "type": "DocType",
+   "name": "Insurance Product",
+   "label": "Insurance Product",
+   "onboard": 1,
+   "dependencies": ""
+  },
+  {
+   "type": "DocType",
+   "name": "Agent",
+   "label": "Agent",
+   "onboard": 1,
+   "dependencies": ""
+  }
+ ],
+ "slideshow": "",
+ "title": "Insurance Management"
+}

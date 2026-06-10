@@ -1,0 +1,409 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "policy_number",
+  "policy_status",
+  "column_break_2",
+  "policy_type",
+  "insurance_provider",
+  "insurance_product",
+  "section_break_5",
+  "customer",
+  "customer_name",
+  "customer_email",
+  "customer_phone",
+  "column_break_10",
+  "agent",
+  "agent_name",
+  "agent_commission_rate",
+  "policy_details_section",
+  "start_date",
+  "end_date",
+  "policy_term",
+  "column_break_15",
+  "sum_assured",
+  "premium_amount",
+  "premium_frequency",
+  "premium_payment_section",
+  "total_premium_paid",
+  "next_premium_due_date",
+  "last_payment_date",
+  "column_break_20",
+  "payment_status",
+  "grace_period_days",
+  "beneficiary_section",
+  "beneficiaries",
+  "coverage_section",
+  "coverages",
+  "ai_risk_assessment_section",
+  "risk_score",
+  "risk_category",
+  "ai_assessment_date",
+  "column_break_25",
+  "fraud_risk_score",
+  "underwriting_notes",
+  "documents_section",
+  "policy_documents",
+  "section_break_30",
+  "terms_and_conditions",
+  "special_conditions",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "INS-POL-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "policy_number",
+   "fieldtype": "Data",
+   "label": "Policy Number",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "policy_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Policy Status",
+   "options": "\nDraft\nActive\nLapsed\nExpired\nCancelled\nSurrendered",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "policy_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Policy Type",
+   "options": "Policy Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "insurance_provider",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Insurance Provider",
+   "options": "Insurance Provider",
+   "reqd": 1
+  },
+  {
+   "fieldname": "insurance_product",
+   "fieldtype": "Link",
+   "label": "Insurance Product",
+   "options": "Insurance Product",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break",
+   "label": "Customer Information"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "fetch_from": "customer.customer_name",
+   "label": "Customer Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer_email",
+   "fieldtype": "Data",
+   "fetch_from": "customer.email_id",
+   "label": "Customer Email",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer_phone",
+   "fieldtype": "Data",
+   "fetch_from": "customer.mobile_no",
+   "label": "Customer Phone",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "agent",
+   "fieldtype": "Link",
+   "label": "Agent",
+   "options": "Agent"
+  },
+  {
+   "fieldname": "agent_name",
+   "fieldtype": "Data",
+   "fetch_from": "agent.agent_name",
+   "label": "Agent Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "agent_commission_rate",
+   "fieldtype": "Percent",
+   "label": "Agent Commission Rate"
+  },
+  {
+   "fieldname": "policy_details_section",
+   "fieldtype": "Section Break",
+   "label": "Policy Details"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "policy_term",
+   "fieldtype": "Int",
+   "label": "Policy Term (Years)"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sum_assured",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Sum Assured",
+   "reqd": 1
+  },
+  {
+   "fieldname": "premium_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Premium Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "premium_frequency",
+   "fieldtype": "Select",
+   "label": "Premium Frequency",
+   "options": "Monthly\nQuarterly\nHalf Yearly\nYearly"
+  },
+  {
+   "fieldname": "premium_payment_section",
+   "fieldtype": "Section Break",
+   "label": "Premium Payment Details"
+  },
+  {
+   "fieldname": "total_premium_paid",
+   "fieldtype": "Currency",
+   "label": "Total Premium Paid",
+   "read_only": 1
+  },
+  {
+   "fieldname": "next_premium_due_date",
+   "fieldtype": "Date",
+   "label": "Next Premium Due Date"
+  },
+  {
+   "fieldname": "last_payment_date",
+   "fieldtype": "Date",
+   "label": "Last Payment Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "Payment Status",
+   "options": "Up to Date\nDue\nOverdue\nDefault"
+  },
+  {
+   "fieldname": "grace_period_days",
+   "fieldtype": "Int",
+   "default": "30",
+   "label": "Grace Period (Days)"
+  },
+  {
+   "fieldname": "beneficiary_section",
+   "fieldtype": "Section Break",
+   "label": "Beneficiaries"
+  },
+  {
+   "fieldname": "beneficiaries",
+   "fieldtype": "Table",
+   "label": "Beneficiaries",
+   "options": "Insurance Beneficiary"
+  },
+  {
+   "fieldname": "coverage_section",
+   "fieldtype": "Section Break",
+   "label": "Coverage Details"
+  },
+  {
+   "fieldname": "coverages",
+   "fieldtype": "Table",
+   "label": "Coverages",
+   "options": "Insurance Coverage"
+  },
+  {
+   "fieldname": "ai_risk_assessment_section",
+   "fieldtype": "Section Break",
+   "label": "AI Risk Assessment",
+   "collapsible": 1
+  },
+  {
+   "fieldname": "risk_score",
+   "fieldtype": "Float",
+   "label": "Risk Score (0-100)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "risk_category",
+   "fieldtype": "Select",
+   "label": "Risk Category",
+   "options": "Low\nMedium\nHigh\nVery High",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ai_assessment_date",
+   "fieldtype": "Datetime",
+   "label": "AI Assessment Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fraud_risk_score",
+   "fieldtype": "Float",
+   "label": "Fraud Risk Score",
+   "read_only": 1
+  },
+  {
+   "fieldname": "underwriting_notes",
+   "fieldtype": "Text Editor",
+   "label": "Underwriting Notes"
+  },
+  {
+   "fieldname": "documents_section",
+   "fieldtype": "Section Break",
+   "label": "Documents"
+  },
+  {
+   "fieldname": "policy_documents",
+   "fieldtype": "Table",
+   "label": "Policy Documents",
+   "options": "Insurance Document"
+  },
+  {
+   "fieldname": "section_break_30",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "terms_and_conditions",
+   "fieldtype": "Text Editor",
+   "label": "Terms and Conditions"
+  },
+  {
+   "fieldname": "special_conditions",
+   "fieldtype": "Text",
+   "label": "Special Conditions"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Insurance Policy",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Insurance",
+ "name": "Insurance Policy",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "Insurance Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1
+  },
+  {
+   "role": "Insurance Agent",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0
+  },
+  {
+   "role": "Insurance Underwriter",
+   "read": 1,
+   "write": 1,
+   "create": 0,
+   "delete": 0
+  },
+  {
+   "role": "Claims Adjuster",
+   "read": 1,
+   "write": 0,
+   "create": 0,
+   "delete": 0
+  },
+  {
+   "role": "Insurance Customer",
+   "read": 1,
+   "write": 0,
+   "create": 0,
+   "delete": 0
+  }
+ ],
+ "quick_entry": 1,
+ "route": "insurance-policy",
+ "search_fields": "policy_number,customer_name,policy_status",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "policy_number",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
