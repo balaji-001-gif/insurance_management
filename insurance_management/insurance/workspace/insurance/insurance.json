@@ -1,6 +1,6 @@
 {
  "actions": [],
- "app": "insurance",
+ "app": "insurance_management",
  "category": "Modules",
  "charts": [],
  "color": "#FF6B35",
@@ -16,6 +16,7 @@
  "icon": "icon-shield",
  "idx": 0,
  "is_hidden": 0,
+ "is_public": 1,
  "label": "Insurance",
  "links": [
   {
