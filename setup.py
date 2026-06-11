@@ -1,10 +1,4 @@
-import os
 from setuptools import setup, find_packages
-
-here = os.path.abspath(os.path.dirname(__file__))
-
-with open(os.path.join(here, "requirements.txt")) as f:
-    install_requires = f.read().strip().split("\n")
 
 setup(
     name="insurance_management",
@@ -15,5 +9,5 @@ setup(
     packages=find_packages(),
     zip_safe=False,
     include_package_data=True,
-    install_requires=install_requires,
+    install_requires=["frappe"],
 )
