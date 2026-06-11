@@ -99,4 +99,8 @@ app_license = "MIT"
 #     "frappe.client.get_count": "insurance_management.overrides.get_count",
 # }
 
-# fixtures = ["Insurance Settings"]
+fixtures = [
+    {"dt": "DocType", "filters": [["module", "=", "Insurance"], ["issingle", "=", 1]]},
+    {"dt": "Custom Field", "filters": [["module", "=", "Insurance"]]},
+    {"dt": "Property Setter", "filters": [["module", "=", "Insurance"]]},
+]

@@ -1,0 +1,5 @@
+[
+ {"dt": "DocType", "filters": [["module", "=", "Insurance"], ["issingle", "=", 1]]},
+ {"dt": "Custom Field", "filters": [["module", "=", "Insurance"]]},
+ {"dt": "Property Setter", "filters": [["module", "=", "Insurance"]]}
+]
