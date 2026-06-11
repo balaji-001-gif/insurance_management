@@ -9,9 +9,7 @@ authors = [
     { name = "Balaji", email = "balaji@example.com" },
 ]
 
-dependencies = [
-    "frappe",
-]
+dependencies = []
 
 [build-system]
 requires = ["flit_core>=3.4"]
