@@ -182,6 +182,20 @@ def _create_customer():
     if frappe.db.exists("Customer", "INS-Sample-Rahul"):
         return "INS-Sample-Rahul"
 
+    # Ensure prerequisite Customer Group exists
+    if not frappe.db.exists("Customer Group", "Individual"):
+        cg = frappe.get_doc({"doctype": "Customer Group", "customer_group_name": "Individual", "is_group": 0})
+        cg.flags.ignore_permissions = True
+        cg.insert()
+        print(f"  Created prerequisite: Customer Group 'Individual'")
+
+    # Ensure prerequisite Territory exists
+    if not frappe.db.exists("Territory", "India"):
+        t = frappe.get_doc({"doctype": "Territory", "territory_name": "India", "is_group": 0})
+        t.flags.ignore_permissions = True
+        t.insert()
+        print(f"  Created prerequisite: Territory 'India'")
+
     customer = frappe.get_doc({
         "doctype": "Customer",
         "customer_name": "Rahul Verma",
