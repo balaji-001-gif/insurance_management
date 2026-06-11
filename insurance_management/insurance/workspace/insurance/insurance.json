@@ -18,6 +18,7 @@
  "is_hidden": 0,
  "is_public": 1,
  "label": "Insurance",
+ "route": "Insurance",
  "links": [
   {
    "type": "DocType",
