@@ -1,7 +1,13 @@
+import os
 from setuptools import setup, find_packages
 
-with open("requirements.txt") as f:
-    install_requires = f.read().strip().split("\n")
+here = os.path.abspath(os.path.dirname(__file__))
+
+try:
+    with open(os.path.join(here, "requirements.txt")) as f:
+        install_requires = f.read().strip().split("\n")
+except FileNotFoundError:
+    install_requires = []
 
 setup(
     name="insurance_management",
