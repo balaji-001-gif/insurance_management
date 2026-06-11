@@ -179,8 +179,8 @@ def _create_agents():
 
 def _create_customer():
     """Create an ERPNext Customer for testing."""
-    if frappe.db.exists("Customer", "INS-Sample-Rahul"):
-        return "INS-Sample-Rahul"
+    if frappe.db.exists("Customer", "Rahul Verma"):
+        return "Rahul Verma"
 
     # Ensure prerequisite Customer Group exists
     if not frappe.db.exists("Customer Group", "Individual"):
