@@ -4,6 +4,7 @@
  "category": "Modules",
  "charts": [],
  "color": "#FF6B35",
+ "content": "[{\"id\":\"cb-transactions\",\"type\":\"card\",\"data\":{\"card_name\":\"Transactions\",\"col\":12}},{\"id\":\"cb-masters\",\"type\":\"card\",\"data\":{\"card_name\":\"Masters\",\"col\":12}},{\"id\":\"cb-operations\",\"type\":\"card\",\"data\":{\"card_name\":\"Operations\",\"col\":12}},{\"id\":\"cb-reports\",\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":12}},{\"id\":\"cb-settings\",\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":12}}]",
  "creation": "2024-01-01 00:00:00.000000",
  "custom_base": 0,
  "doctype": "Workspace",
@@ -16,159 +17,248 @@
  "icon": "icon-shield",
  "idx": 0,
  "is_hidden": 0,
- "is_public": 1,
+ "public": 1,
  "label": "Insurance",
- "route": "Insurance",
  "links": [
   {
-   "type": "DocType",
-   "name": "Insurance Policy",
-   "label": "Insurance Policy",
+   "hidden": 0,
+   "idx": 1,
+   "is_query_report": 0,
+   "label": "Transactions",
+   "link_count": 0,
    "onboard": 1,
-   "dependencies": "",
-   "quick_list": 0,
-   "count": 0,
-   "link": "List/Insurance Policy"
+   "title": "Transactions",
+   "type": "Card Break"
   },
   {
-   "type": "DocType",
-   "name": "Insurance Claim",
-   "label": "Insurance Claim",
-   "onboard": 1,
-   "dependencies": "",
-   "quick_list": 0,
-   "count": 0,
-   "link": "List/Insurance Claim"
-  },
-  {
-   "type": "DocType",
-   "name": "Insurance Quote",
+   "hidden": 0,
+   "idx": 2,
+   "is_query_report": 0,
    "label": "Insurance Quote",
+   "link_to": "Insurance Quote",
+   "link_type": "DocType",
    "onboard": 1,
-   "dependencies": "",
-   "quick_list": 0,
-   "count": 0,
-   "link": "List/Insurance Quote"
+   "type": "Link"
   },
   {
-   "type": "DocType",
-   "name": "Insurance Product",
-   "label": "Insurance Product",
+   "hidden": 0,
+   "idx": 3,
+   "is_query_report": 0,
+   "label": "Insurance Policy",
+   "link_to": "Insurance Policy",
+   "link_type": "DocType",
    "onboard": 1,
-   "dependencies": "",
-   "quick_list": 0,
-   "count": 0,
-   "link": "List/Insurance Product"
+   "type": "Link"
   },
   {
-   "type": "DocType",
-   "name": "Insurance Provider",
-   "label": "Insurance Provider",
+   "hidden": 0,
+   "idx": 4,
+   "is_query_report": 0,
+   "label": "Insurance Claim",
+   "link_to": "Insurance Claim",
+   "link_type": "DocType",
    "onboard": 1,
-   "dependencies": "",
-   "quick_list": 0,
-   "count": 0,
-   "link": "List/Insurance Provider"
+   "type": "Link"
   },
   {
-   "type": "DocType",
-   "name": "Agent",
-   "label": "Agent",
-   "onboard": 1,
-   "dependencies": "",
-   "quick_list": 0,
-   "count": 0,
-   "link": "List/Agent"
-  },
-  {
-   "type": "DocType",
-   "name": "Premium Payment",
+   "hidden": 0,
+   "idx": 5,
+   "is_query_report": 0,
    "label": "Premium Payment",
+   "link_to": "Premium Payment",
+   "link_type": "DocType",
    "onboard": 1,
-   "dependencies": "",
-   "quick_list": 0,
-   "count": 0,
-   "link": "List/Premium Payment"
+   "type": "Link"
   },
   {
-   "type": "DocType",
-   "name": "Policy Renewal",
+   "hidden": 0,
+   "idx": 6,
+   "is_query_report": 0,
    "label": "Policy Renewal",
+   "link_to": "Policy Renewal",
+   "link_type": "DocType",
    "onboard": 1,
-   "dependencies": "",
-   "quick_list": 0,
-   "count": 0,
-   "link": "List/Policy Renewal"
+   "type": "Link"
   },
   {
-   "type": "DocType",
-   "name": "Endorsement",
+   "hidden": 0,
+   "idx": 7,
+   "is_query_report": 0,
    "label": "Endorsement",
+   "link_to": "Endorsement",
+   "link_type": "DocType",
    "onboard": 1,
-   "dependencies": "",
-   "quick_list": 0,
-   "count": 0,
-   "link": "List/Endorsement"
+   "type": "Link"
   },
   {
-   "type": "DocType",
-   "name": "KYC Document",
-   "label": "KYC Document",
+   "hidden": 0,
+   "idx": 8,
+   "is_query_report": 0,
+   "label": "Masters",
+   "link_count": 0,
    "onboard": 1,
-   "dependencies": "",
-   "quick_list": 0,
-   "count": 0,
-   "link": "List/KYC Document"
+   "title": "Masters",
+   "type": "Card Break"
   },
   {
-   "type": "DocType",
-   "name": "Insurance Settings",
-   "label": "Insurance Settings",
-   "onboard": 0,
-   "dependencies": "",
-   "quick_list": 0,
-   "count": 0,
-   "link": "Form/Insurance Settings"
+   "hidden": 0,
+   "idx": 9,
+   "is_query_report": 0,
+   "label": "Insurance Provider",
+   "link_to": "Insurance Provider",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
   },
   {
-   "type": "DocType",
-   "name": "Policy Type",
+   "hidden": 0,
+   "idx": 10,
+   "is_query_report": 0,
+   "label": "Insurance Product",
+   "link_to": "Insurance Product",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "idx": 11,
+   "is_query_report": 0,
    "label": "Policy Type",
+   "link_to": "Policy Type",
+   "link_type": "DocType",
    "onboard": 1,
-   "dependencies": "",
-   "quick_list": 0,
-   "count": 0,
-   "link": "List/Policy Type"
+   "type": "Link"
   },
   {
-   "type": "DocType",
-   "name": "Coverage Type",
+   "hidden": 0,
+   "idx": 12,
+   "is_query_report": 0,
    "label": "Coverage Type",
+   "link_to": "Coverage Type",
+   "link_type": "DocType",
    "onboard": 1,
-   "dependencies": "",
-   "quick_list": 0,
-   "count": 0,
-   "link": "List/Coverage Type"
+   "type": "Link"
   },
   {
-   "type": "DocType",
-   "name": "Commission Structure",
+   "hidden": 0,
+   "idx": 13,
+   "is_query_report": 0,
    "label": "Commission Structure",
+   "link_to": "Commission Structure",
+   "link_type": "DocType",
    "onboard": 1,
-   "dependencies": "",
-   "quick_list": 0,
-   "count": 0,
-   "link": "List/Commission Structure"
+   "type": "Link"
   },
   {
-   "type": "DocType",
-   "name": "Risk Factor",
+   "hidden": 0,
+   "idx": 14,
+   "is_query_report": 0,
    "label": "Risk Factor",
+   "link_to": "Risk Factor",
+   "link_type": "DocType",
    "onboard": 1,
-   "dependencies": "",
-   "quick_list": 0,
-   "count": 0,
-   "link": "List/Risk Factor"
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "idx": 15,
+   "is_query_report": 0,
+   "label": "Operations",
+   "link_count": 0,
+   "onboard": 1,
+   "title": "Operations",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "idx": 16,
+   "is_query_report": 0,
+   "label": "Agent",
+   "link_to": "Agent",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "idx": 17,
+   "is_query_report": 0,
+   "label": "KYC Document",
+   "link_to": "KYC Document",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "idx": 18,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_count": 0,
+   "onboard": 0,
+   "title": "Reports",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "idx": 19,
+   "is_query_report": 1,
+   "label": "Policy Register",
+   "link_to": "Policy Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "idx": 20,
+   "is_query_report": 1,
+   "label": "Claims Analysis",
+   "link_to": "Claims Analysis",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "idx": 21,
+   "is_query_report": 1,
+   "label": "Premium Collection Report",
+   "link_to": "Premium Collection Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "idx": 22,
+   "is_query_report": 1,
+   "label": "Agent Commission Report",
+   "link_to": "Agent Commission Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "idx": 23,
+   "is_query_report": 0,
+   "label": "Settings",
+   "link_count": 0,
+   "onboard": 0,
+   "title": "Settings",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "idx": 24,
+   "is_query_report": 0,
+   "label": "Insurance Settings",
+   "link_to": "Insurance Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
  "modified": "2024-01-01 00:00:00.000000",
@@ -215,38 +305,28 @@
  "shortcuts": [
   {
    "type": "DocType",
-   "name": "Insurance Policy",
-   "label": "Insurance Policy",
-   "onboard": 1,
-   "dependencies": ""
+   "link_to": "Insurance Quote",
+   "label": "Insurance Quote"
   },
   {
    "type": "DocType",
-   "name": "Insurance Claim",
-   "label": "Insurance Claim",
-   "onboard": 1,
-   "dependencies": ""
+   "link_to": "Insurance Policy",
+   "label": "Insurance Policy"
   },
   {
    "type": "DocType",
-   "name": "Insurance Quote",
-   "label": "Insurance Quote",
-   "onboard": 1,
-   "dependencies": ""
+   "link_to": "Insurance Claim",
+   "label": "Insurance Claim"
   },
   {
    "type": "DocType",
-   "name": "Insurance Product",
-   "label": "Insurance Product",
-   "onboard": 1,
-   "dependencies": ""
+   "link_to": "Premium Payment",
+   "label": "Premium Payment"
   },
   {
    "type": "DocType",
-   "name": "Agent",
-   "label": "Agent",
-   "onboard": 1,
-   "dependencies": ""
+   "link_to": "Agent",
+   "label": "Agent"
   }
  ],
  "slideshow": "",
