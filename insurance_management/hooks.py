@@ -10,7 +10,6 @@ app_license = "MIT"
 
 # Includes
 # --------------------------
-
 # include js, css files in header of desk
 # app_include_css = "/assets/insurance_management/css/insurance_management.css"
 # app_include_js = "/assets/insurance_management/js/insurance_management.js"
@@ -28,7 +27,6 @@ app_license = "MIT"
 
 # Jenv Template
 # --------------------------
-
 # add methods and filters to jinja environment
 # jinja = {
 #     "methods": ["insurance_management.utils.jinja_methods"],
@@ -37,7 +35,6 @@ app_license = "MIT"
 
 # Installation
 # --------------------------
-
 # install_info = [
 #     {
 #         "app_name": "insurance_management",
@@ -59,7 +56,6 @@ app_license = "MIT"
 # Document Events
 # --------------------------
 # Hook on document methods and events
-
 # doc_events = {
 #     "*": {
 #         "validate": "insurance_management.events.validate",
@@ -71,7 +67,6 @@ app_license = "MIT"
 
 # Scheduled Tasks
 # --------------------------
-
 # scheduler_events = {
 #     "daily": [
 #         "insurance_management.tasks.daily",
@@ -89,18 +84,16 @@ app_license = "MIT"
 
 # Testing
 # --------------------------
-
 # before_tests = "insurance_management.setup.before_tests"
 
 # Overriding Methods
 # ------------------------------
-
 # override_whitelisted_methods = {
 #     "frappe.client.get_count": "insurance_management.overrides.get_count",
 # }
 
+# Fixtures
+# --------------------------
 fixtures = [
-    {"dt": "DocType", "filters": [["module", "=", "Insurance"], ["issingle", "=", 1]]},
-    {"dt": "Custom Field", "filters": [["module", "=", "Insurance"]]},
-    {"dt": "Property Setter", "filters": [["module", "=", "Insurance"]]},
+    {"dt": "Workspace", "filters": [["module", "=", "Insurance"]]},
 ]
